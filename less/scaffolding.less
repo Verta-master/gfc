@@ -56,7 +56,6 @@ button {
 }
 
 h1,
-h2,
 h3,
 h4,
 h5,
@@ -64,5 +63,30 @@ h6 {
   font-family: "Cormorant SC", "Arial", sans-serif;
   color: #333333;
   font-weight: 700;
+  line-height: 1.2;
   text-align: center;
+}
+
+h2,
+.title {
+    position: relative;
+    padding-bottom: 45px;
+    font-family: "Cormorant SC", "Arial", sans-serif;
+    color: #333333;
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
+    
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 203px;
+        height: 45px;
+        background-image: url(../img/images/deco.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
 }
