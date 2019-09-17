@@ -1,0 +1,36 @@
+.search {
+    position: relative;
+    
+    &:hover {
+        .search__input {
+            height: 40px;
+            opacity: 1;
+            .transition();
+        }
+    }
+}
+
+.search__input {
+    position: absolute;
+    top: 120%;
+    right: 0;
+    display: block;
+    width: 150px;
+    height: 0;
+    padding: 0 10px;
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: rgba(255,255,255,0);
+    opacity: 0;
+    .transition();
+}
+
+.search__btn {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/icons/search.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 17px 18px;
+}
