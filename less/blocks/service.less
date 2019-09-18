@@ -2,6 +2,7 @@
     position: relative;
     z-index: 2;
     padding-top: 10px;
+    background-color: #006D40;
     background-image: url(../img/images/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -35,8 +36,29 @@
     
     &:hover,
     &:active {
+        z-index: 10;
+        
         .service__drop {
              display: block;
+        }
+        
+        .service__btn {
+            background-color: rgba(255,255,255,0);
+            box-shadow: none;
+            .transition();
+
+            &::after {
+                opacity: 1;
+                left: -9px;
+                right: -9px;
+                .transition();
+            }
+
+            &::before {
+                background-image: url(../img/icons/icon-up.svg);
+                background-color: #FFFFFF;
+                .transition();
+            }
         }
     }
 }
@@ -90,26 +112,6 @@
         z-index: -1;
         .transition();
     }
-    
-    &:hover,
-    &:active {
-        background-color: rgba(255,255,255,0);
-        box-shadow: none;
-        .transition();
-        
-        &::after {
-            opacity: 1;
-            left: -9px;
-            right: -9px;
-            .transition();
-        }
-        
-        &::before {
-            background-image: url(../img/icons/icon-up.svg);
-            background-color: #FFFFFF;
-            .transition();
-        }
-    }
 }
 
 .service__drop {
@@ -120,11 +122,9 @@
     top: 100%;
     left: 0;
     right: 0;
-    z-index: 10;
+    z-index: 4;
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
-    background-color: #fff;
-//    opacity: 0;
-//    .transition();
+    background-color: #fff;   
 }
 
 .service__link {
@@ -132,4 +132,11 @@
     padding: 10px 23px;
     color: #333;
     border-top: 1px solid rgba(0,0,0,0.1);
+    .transition();
+    
+    &:hover,
+    &:active {
+        background-color: #F2D97A;
+        .transition();
+    }
 }
