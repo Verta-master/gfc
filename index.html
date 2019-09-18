@@ -316,7 +316,7 @@
       <div class="logo">
         <img src="img/images/logo.png" alt="Logo">
       </div>
-      <div class="footer__block">
+      <div class="footer__block footer__block--menu">
         <p class="footer__title">Меню</p>
         <ul class="footer__menu">
           <li><a href="#">О компании</a></li>
@@ -327,7 +327,7 @@
           <li><a href="#">Контакты</a></li>
         </ul>
       </div>
-      <div class="footer__block">
+      <div class="footer__block footer__block--service">
         <p class="footer__title">Услуги</p>
         <ul class="footer__nav">
           <li><a href="#">Лизинг</a></li>
@@ -347,7 +347,14 @@
   
   <!-- Modal window -->
   <div style="display: none;" id="call" class="modal">
-  
+    <div class="feedback">
+      <p class="feedback__title">Оставьте Ваши имя и номер и мы ответим на все интересующие вас вопросы!</p>
+      <form action="#" class="feedback__form">
+        <input type="text" class="feedback__input" placeholder="Имя">
+        <input type="text" class="feedback__input" placeholder="Номер">
+        <button type="submit" class="feedback__btn">Заказать звонок</button>
+      </form>
+    </div>
   </div>
   
   <script src="js/jquery-3.2.1.min.js"></script>
@@ -381,6 +388,17 @@
       preventClicksPropagation: false,
       slidesPerView: 4,
       loop: true,
+      breakpoints: {
+          1170: {
+              slidesPerView: 3,
+          },
+          1022: {
+              slidesPerView: 2,
+          },
+          480: {
+              slidesPerView: 1,
+          }
+      }
     });
   </script>
 </body>
