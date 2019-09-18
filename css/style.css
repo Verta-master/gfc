@@ -519,6 +519,26 @@ h2::after,
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
+.btn-top {
+  width: 73px;
+  height: 73px;
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  background-image: url(../img/icons/btn-top.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 37px 23px;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.btn-top:hover,
+.btn-top:active {
+  border-color: #F2D97A;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
 .header {
   position: absolute;
   top: 0;
@@ -1231,4 +1251,97 @@ h2::after,
           box-shadow: none;
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
+}
+.footer {
+  background-color: #1B704D;
+}
+.footer .logo img {
+  display: block;
+}
+.footer__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__block {
+  width: 212px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  color: #fff;
+}
+.footer__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: "Cormorant SC", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1;
+}
+.footer__nav,
+.footer__menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #B1DBCA;
+}
+.footer__nav li,
+.footer__menu li {
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.footer__nav li:hover,
+.footer__menu li:hover,
+.footer__nav li:active,
+.footer__menu li:active {
+  color: #FFEEAF;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.footer__menu {
+  font-size: 14px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+.footer__nav {
+  line-height: 32px;
+}
+.footer__phone {
+  display: block;
+  margin-top: auto;
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+  color: #fff;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.footer__phone:hover,
+.footer__phone:active {
+  color: #F2D97A;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.footer__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.footer__contacts .btn {
+  margin-left: auto;
 }
