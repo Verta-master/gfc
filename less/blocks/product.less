@@ -1,5 +1,7 @@
 .product {
-    
+    .title {
+        margin-top: 15px;
+    }
 }
 
 .product__list {
@@ -92,13 +94,15 @@
 .product__info {
     width: 100%;
     flex-grow: 1;
-    padding: 30px;
+    padding: 27px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .product__title {
+    width: ~"calc(100% - 210px)";
+    max-width: 100%;
     margin: 0;
     line-height: 1;
     font-family: "Cormorant SC", "Arial", sans-serif;
