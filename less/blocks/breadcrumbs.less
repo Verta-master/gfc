@@ -1,0 +1,29 @@
+.breadcrumbs {
+    padding-top: 35px;
+    padding-bottom: 15px;
+}
+
+.breadcrumbs__link {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+a.breadcrumbs__link {
+    margin-right: 5px;
+    color: rgba(0, 0, 0, 0.8);
+    .transition();
+    
+    &::after {
+        content: "/";
+        margin-left: 5px;
+    }
+    
+    &:hover,
+    &:active {
+        color: #DCB03E;
+        .transition();
+        
+        &::after {
+            color: rgba(0, 0, 0, 0.8);
+        }
+    }
+}

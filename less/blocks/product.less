@@ -1,0 +1,108 @@
+.product {
+    
+}
+
+.product__list {
+    .reset();
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product__item {
+    width: 49%;
+    margin-bottom: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    .transition();
+    
+    &:hover {
+        box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+        .transition();
+    }
+    
+    &--subscribe {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        padding-top: 30px;
+        text-align: center;
+        background-image: linear-gradient(281.2deg, #EBBC42 0%, #F5DF8C 78.32%);
+        border-radius: 8px;
+        box-shadow: none;
+        
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 97px;
+            height: 80px;
+            background-image: url(../img/icons/envelope.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        
+        .subscription__form {
+            margin-top: auto;
+        }
+    }
+}
+
+.product__link {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.product__img {
+    position: relative;
+    width: 100%;
+    height: 285px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-bottom: 4px solid #F2D97A;
+    
+    img {
+        display: block;
+        object-position: 50%;
+        object-fit: cover;
+        min-width: 100%;
+        min-height: 100%;
+    }
+    
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(27, 112, 77, 0.5);
+        mix-blend-mode: multiply;
+    }
+}
+
+.product__info {
+    width: 100%;
+    flex-grow: 1;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product__title {
+    margin: 0;
+    line-height: 1;
+    font-family: "Cormorant SC", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #333;
+}
